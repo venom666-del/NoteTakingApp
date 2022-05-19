@@ -1,2 +1,30 @@
-﻿body {
+﻿/*Mechanics*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+/*Navbar*/
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navLink{
+    color: #333333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo{
+    font-size: 40px;
 }
