@@ -17,10 +17,14 @@ namespace NoteTakingApp
             {
                 Response.Redirect("wfLogin.aspx");
             }
+            if (!IsPostBack)
+            {
+                Populate();
+            }
         }
         public void Populate()
         {
-            string selectQuery = "select value, date from tNotes";
+            string selectQuery = "select value, date from tNotes where userID='" + Session["userID"].ToString() + "'";
             DataTable notes = MyAdoHelper.ExecuteDataTable("NoteTaking.mdf", selectQuery);
 
             foreach(DataRow row in notes.Rows)
@@ -37,10 +41,13 @@ namespace NoteTakingApp
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             string note = tbxNoteValue.Text;
-            DateTime now = new DateTime();
+            DateTime now = DateTime.Now;
             
             string insertNonQuery = "insert into tNotes(value, date, userID) values(N'"+note+"', '"+ now.ToString("g") + "', '"+Session["userID"]+"')";
             int rows = MyAdoHelper.RowsAffected("NoteTaking", insertNonQuery);
+
+            tbxNoteValue.Text = "";
+            Populate();
         }
     }
 }
