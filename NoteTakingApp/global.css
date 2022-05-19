@@ -30,27 +30,34 @@
     font-size: 40px;
     color: #e81eff;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
 }
 
 /*Notes Section*/
 .notesWrapper{
-    min-height: 450px;
     width: 400px;
-    background-color: red;
+    height: 450px;
 }
 
-.notesWrapperWrapper{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.notesWrapperWrapper {
+    border: #222222 solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 400px;
+    margin-top: 20px;
+    border-bottom: none;
 }
 
 .addNoteInputAndButtonSection {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: inherit;
     display: flex;
+    margin-top: 20px;
 }
 
 .addNoteInput, .addNoteButton{
@@ -61,8 +68,17 @@
     width: inherit;
 }
 
-.notesCont{
+.notesCont {
     width: inherit;
-    background-color: pink;
     height: 400px;
+    overflow-y: scroll;
+}
+
+.header{
+    font-size: 35px;
+    text-align: center;
+}
+
+::-webkit-scrollbar{
+    width: 0;
 }
