@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="align-to-middle">
         <div class="header-cont-public">
-            <asp:Label runat="server" CssClass="header" Text="התחבר"></asp:Label>
+            <asp:Label runat="server" CssClass="header" Text="Login"></asp:Label>
         </div>
         <table>
             <tr>
@@ -17,7 +17,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button Text="Login" ID="submit" OnClick="" runat="server" />      
+                    <asp:Button Text="Login" ID="accept" OnClick="accept_Click" runat="server" />    
                 </td>
                 <td>
                     <asp:Label ID="lblResult" runat="server" />
