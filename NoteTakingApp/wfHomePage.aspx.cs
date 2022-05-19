@@ -13,10 +13,10 @@ namespace NoteTakingApp
         public string publicNotes;
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if(Session["userID"] == null)
-            //{
-            //    Response.Redirect("wfLogin.aspx");
-            //}
+            if (Session["userID"] == null)
+            {
+                Response.Redirect("wfLogin.aspx");
+            }
         }
         public void Populate()
         {
