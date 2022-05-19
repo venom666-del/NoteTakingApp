@@ -10,15 +10,13 @@
 <body>
     <form id="form1" runat="server">
         <nav class="navbar">
-                <div class="links">
-                    <div class="navItem"><a class="navLink" href="#">Home</a></div>
-                    <div class="navItem"><a class="navLink" href="#">Register</a></div>
-                    <div class="navItem"><a class="navLink" href="#">Login</a></div>
-                    <div class="navItem"><a class="navLink" href="#">Notes History</a></div>
-                </div>
-                <div class="logoCont">
-                    <div class="logo"><a href="#">NoteTaking</a></div>
-                </div>
+            <div class="logo"><a class="logoLink" href="#">NoteTaking</a></div>
+            <div class="links">
+                <div class="navItem"><a class="navLink" href="#">Home</a></div>
+                <div class="navItem"><a class="navLink" href="#">Register</a></div>
+                <div class="navItem"><a class="navLink" href="#">Login</a></div>
+                <div class="navItem"><a class="navLink" href="#">Notes History</a></div>
+            </div>
         </nav>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="global.css" />
     <Content Include="Web.config" />
+    <Content Include="wfHomePage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NoteTaking.Master.cs">
@@ -79,6 +80,13 @@
       <DependentUpon>NoteTaking.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wfHomePage.aspx.cs">
+      <DependentUpon>wfHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfHomePage.aspx.designer.cs">
+      <DependentUpon>wfHomePage.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="NoteTaking.Master" />
