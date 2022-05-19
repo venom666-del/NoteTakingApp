@@ -8,7 +8,7 @@
             </div>
             <div class="addNoteInputAndButtonSection">
                 <asp:TextBox ID="tbxNoteValue" class="addNoteInput" placeholder="Add Note:" runat="server" />
-                <asp:Button Text="Add" ID="btnSubmit" class="addNoteButton" runat="server" />
+                <asp:Button Text="Add" OnClick="btnSubmit_Click" ID="btnSubmit" class="addNoteButton" runat="server" />
             </div>
         </div>
     </div>

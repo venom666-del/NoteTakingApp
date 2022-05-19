@@ -13,7 +13,7 @@ namespace NoteTakingApp
         public string publicNotes;
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if(Session["userAuth"] == null)
+            //if(Session["userID"] == null)
             //{
             //    Response.Redirect("wfLogin.aspx");
             //}
@@ -32,6 +32,15 @@ namespace NoteTakingApp
                 publicNotes += "</div>";
                 publicNotes += "</div>";
             }
+        }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string note = tbxNoteValue.Text;
+            DateTime now = new DateTime();
+            
+            string insertNonQuery = "insert into tNotes(value, date, userID) values(N'"+note+"', '"+ now.ToString("g") + "', '"+Session["userID"]+"')";
+            int rows = MyAdoHelper.RowsAffected("NoteTaking", insertNonQuery);
         }
     }
 }
