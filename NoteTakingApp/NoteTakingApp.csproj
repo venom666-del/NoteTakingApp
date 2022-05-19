@@ -74,9 +74,25 @@
     <Content Include="global.css" />
     <Content Include="Web.config" />
     <Content Include="wfHomePage.aspx" />
+    <Content Include="wfLogin.aspx" />
+    <Content Include="wfRegister.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\MyAdoHelper.cs" />
+    <Compile Include="wfLogin.aspx.cs">
+      <DependentUpon>wfLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfLogin.aspx.designer.cs">
+      <DependentUpon>wfLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfRegister.aspx.cs">
+      <DependentUpon>wfRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfRegister.aspx.designer.cs">
+      <DependentUpon>wfRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\MyAdoHelper.cs" />
     <Compile Include="NoteTaking.Master.cs">
       <DependentUpon>NoteTaking.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

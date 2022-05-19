@@ -37,7 +37,7 @@ public class MyAdoHelper
         path += fileName;
         // Original conn string
         //                    Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Jobu5\source\repos\DBTries\DBTries\App_Data\DBTry.mdf;Integrated Security=True
-        string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Jobu5\source\repos\DBTries\DBTries\App_Data\DBTry.mdf;Integrated Security=True";
+        string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\IMOE001\Desktop\NoteTakingApp\NoteTakingApp\App_Data\NoteTaking.mdf;Integrated Security=True";
         SqlConnection conn = new SqlConnection(connString);
         return conn;
 

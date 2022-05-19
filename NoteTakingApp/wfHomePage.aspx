@@ -4,7 +4,7 @@
     <div class="notesWrapperWrapper">
         <div class="notesWrapper">
             <div class="notesCont">
-
+                <%=publicNotes %>
             </div>
             <div class="addNoteInputAndButtonSection">
                 <asp:TextBox ID="tbxNoteValue" class="addNoteInput" placeholder="Add Note:" runat="server" />
