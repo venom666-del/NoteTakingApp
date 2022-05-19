@@ -1,11 +1,11 @@
-﻿/*Mechanics*/
+﻿/*Mechanics Section*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box
 }
 
-/*Navbar*/
+/*Navbar Section*/
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -30,4 +30,39 @@
     font-size: 40px;
     color: #e81eff;
     text-decoration: none;
+}
+
+/*Notes Section*/
+.notesWrapper{
+    min-height: 450px;
+    width: 400px;
+    background-color: red;
+}
+
+.notesWrapperWrapper{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.addNoteInputAndButtonSection {
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    display: flex;
+}
+
+.addNoteInput, .addNoteButton{
+    padding: 10px;
+}
+
+.addNoteInput{
+    width: inherit;
+}
+
+.notesCont{
+    width: inherit;
+    background-color: pink;
+    height: 400px;
 }
