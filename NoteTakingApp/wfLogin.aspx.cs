@@ -24,7 +24,7 @@ namespace NoteTakingApp
                 int rows = user.Rows.Count;
                 if (rows == 1)
                 {
-                    Session["ID"] = user.Rows[0]["userID"].ToString();
+                    Session["userID"] = user.Rows[0]["userID"].ToString();
                     if (user.Rows[0]["auth"].ToString() == "1")
                     {
                         Session["name"] = user.Rows[0]["name"].ToString();
