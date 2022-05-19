@@ -67,11 +67,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\NoteTaking.mdf" />
+    <Content Include="App_Data\NoteTaking_log.ldf">
+      <DependentUpon>NoteTaking.mdf</DependentUpon>
+    </Content>
     <Content Include="global.css" />
     <Content Include="Web.config" />
     <Content Include="wfHomePage.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\MyAdoHelper.cs" />
     <Compile Include="NoteTaking.Master.cs">
       <DependentUpon>NoteTaking.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
