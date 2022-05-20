@@ -12,7 +12,7 @@
         <nav class="navbar">
             <div class="logo"><a class="logoLink" href="#">NoteTaking</a></div>
             <div class="links">
-                <div class="navItem"><a class="navLink" href="wfHomePage.aspx">Home</a></div>
+                <div class="navItem"><a class="navLink" href="wfShortNotes.aspx">Home</a></div>
                 <div class="navItem"><a class="navLink" href="wfRegister.aspx">Register</a></div>
                 <div class="navItem"><a class="navLink" href="wfLogin.aspx">Login</a></div>
                 <div class="navItem"><a class="navLink" href="#">Notes History</a></div>

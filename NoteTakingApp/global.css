@@ -6,6 +6,10 @@
     box-sizing: border-box
 }
 
+body{
+    background-color: #cacaca;
+}
+
 /*Navbar Section*/
 .navbar{
     display: flex;
@@ -29,7 +33,7 @@
 
 .logoLink {
     font-size: 40px;
-    color: #e81eff;
+    color: #111111;
     text-decoration: none;
     position: relative;
     overflow: hidden;
@@ -51,35 +55,51 @@
     width: 400px;
     margin-top: 20px;
     border-bottom: none;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0 0 50px #5d5d5d;
 }
 
-.addNoteInputAndButtonSection {
-    position: sticky;
-    bottom: 0;
-    width: inherit;
-    display: flex;
-    margin-top: 20px;
-}
-
-.addNoteInput, .addNoteButton{
-    padding: 10px;
-}
-
-.addNoteInput{
-    width: inherit;
-}
-
-.notesCont {
-    width: inherit;
-    height: 400px;
+.notesCont{
+    height: 364px;
     overflow-y: scroll;
 }
 
-.header{
+.addNoteInput, .addNoteButton, .addDescriptionInput {
+    padding: 5px;
+    width: inherit;
+}
+
+.column-flex{
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    width: inherit;
+    position: sticky;
+}
+
+.header {
     font-size: 35px;
     text-align: center;
 }
 
-::-webkit-scrollbar{
-    width: 0;
+/*Note Itself*/
+.noteTopic{
+    font-size: 25px;
+}
+
+.noteDescription {
+    font-size: 20px;
+    color: #333333;
+}
+
+.noteDate {
+    font-size: 15px;
+    color: #333333;
+}
+
+.singleNoteWrapper{
+    max-width: 400px;
+    overflow-wrap: break-word;
+    padding: 10px 10px;
 }

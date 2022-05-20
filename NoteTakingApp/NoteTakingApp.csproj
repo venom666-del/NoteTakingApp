@@ -73,7 +73,7 @@
     </Content>
     <Content Include="global.css" />
     <Content Include="Web.config" />
-    <Content Include="wfHomePage.aspx" />
+    <Content Include="wfShortNotes.aspx" />
     <Content Include="wfLogin.aspx" />
     <Content Include="wfRegister.aspx" />
   </ItemGroup>
@@ -101,12 +101,12 @@
       <DependentUpon>NoteTaking.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="wfHomePage.aspx.cs">
-      <DependentUpon>wfHomePage.aspx</DependentUpon>
+    <Compile Include="wfShortNotes.aspx.cs">
+      <DependentUpon>wfShortNotes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="wfHomePage.aspx.designer.cs">
-      <DependentUpon>wfHomePage.aspx</DependentUpon>
+    <Compile Include="wfShortNotes.aspx.designer.cs">
+      <DependentUpon>wfShortNotes.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -29,13 +29,13 @@ namespace NoteTakingApp
                     {
                         Session["name"] = user.Rows[0]["name"].ToString();
                         Session["userAuth"] = true;
-                        Response.Redirect("wfHomePage.aspx");
+                        Response.Redirect("wfShortNotes.aspx");
                     }
                     if (user.Rows[0]["auth"].ToString() == "2")
                     {
                         Session["name"] = user.Rows[0]["name"].ToString();
                         Session["adminAuth"] = true;
-                        Response.Redirect("wfHomePage.aspx");
+                        Response.Redirect("wfShortNotes.aspx");
                     }
                 }
             }

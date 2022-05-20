@@ -24,15 +24,20 @@ namespace NoteTakingApp
         }
         public void Populate()
         {
-            string selectQuery = "select value, date from tNotes where userID='" + Session["userID"].ToString() + "'";
+            string selectQuery = "select topic, description, date from tNotes where userID='" + Session["userID"].ToString() + "' order by date desc";
             DataTable notes = MyAdoHelper.ExecuteDataTable("NoteTaking.mdf", selectQuery);
 
             foreach(DataRow row in notes.Rows)
             {
-                publicNotes += "<div>";
-                publicNotes += row["value"];
-                publicNotes += "<div>";
+                publicNotes += "<div class=\"singleNoteWrapper\">";
+                publicNotes += "<div class=\"noteTopic\">";
+                publicNotes += row["topic"];
+                publicNotes += "<div class=\"noteDescription\">";
+                publicNotes += row["description"];
+                publicNotes += "</div>";
+                publicNotes += "<div class=\"noteDate\">";
                 publicNotes += row["date"];
+                publicNotes += "</div>";
                 publicNotes += "</div>";
                 publicNotes += "</div>";
             }
@@ -43,10 +48,11 @@ namespace NoteTakingApp
             string note = tbxNoteValue.Text;
             DateTime now = DateTime.Now;
             
-            string insertNonQuery = "insert into tNotes(value, date, userID) values(N'"+note+"', '"+ now.ToString("g") + "', '"+Session["userID"]+"')";
+            string insertNonQuery = "insert into tNotes(topic, description, date, userID) values(N'"+note+"', '"+ tbxNoteDescription.Text+ "', '"+ now.ToString("g") + "', '"+Session["userID"]+"')";
             int rows = MyAdoHelper.RowsAffected("NoteTaking", insertNonQuery);
 
             tbxNoteValue.Text = "";
+            tbxNoteDescription.Text = "";
             Populate();
         }
     }
