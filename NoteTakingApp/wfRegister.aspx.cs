@@ -13,5 +13,10 @@ namespace NoteTakingApp
         {
 
         }
+
+        protected void accept_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
