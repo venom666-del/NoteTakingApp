@@ -1,4 +1,9 @@
-﻿/*Mechanics Section*/
+﻿/*Imports Section*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+/*Mechanics Section*/
 *{
     outline: none;
     padding: 0;
@@ -7,7 +12,7 @@
 }
 
 body{
-    background-color: #cacaca;
+    background-color: #db8af0;
 }
 
 /*Navbar Section*/
@@ -25,10 +30,11 @@ body{
     align-items: center;
 }
 
-.navLink{
+.navLink {
     color: #000000;
     text-decoration: none;
     font-size: 20px;
+    font-family: 'Comfortaa', cursive;
 }
 
 .logoLink {
@@ -37,6 +43,8 @@ body{
     text-decoration: none;
     position: relative;
     overflow: hidden;
+    font-weight: 800;
+    font-family: 'Dancing Script', cursive;
 }
 
 /*Notes Section*/
@@ -81,16 +89,21 @@ body{
 .header {
     font-size: 35px;
     text-align: center;
+    font-family: 'Comfortaa', cursive;
 }
 
 /*Note Itself*/
-.noteTopic{
+.noteTopic {
     font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 800;
 }
 
 .noteDescription {
     font-size: 20px;
     color: #333333;
+    font-family: 'Yellowtail', cursive;
+    font-weight: 100;
 }
 
 .noteDate {
