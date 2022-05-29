@@ -76,6 +76,7 @@
     <Content Include="wfShortNotes.aspx" />
     <Content Include="wfLogin.aspx" />
     <Content Include="wfRegister.aspx" />
+    <Content Include="wfSuccess.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="wfLogin.aspx.cs">
@@ -107,6 +108,13 @@
     </Compile>
     <Compile Include="wfShortNotes.aspx.designer.cs">
       <DependentUpon>wfShortNotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfSuccess.aspx.cs">
+      <DependentUpon>wfSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfSuccess.aspx.designer.cs">
+      <DependentUpon>wfSuccess.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
